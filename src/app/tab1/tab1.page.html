@@ -1,0 +1,22 @@
+<ion-app>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+Video aufnehemen    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Video aufnehemen</ion-title>
+    </ion-toolbar>
+  </ion-header>
+ <app-recordvid></app-recordvid>
+ <h1>tab1S</h1>
+
+ <ion-button (click)="captureVideo()">start vid</ion-button>
+
+  <app-explore-container name="Tab 1 page"></app-explore-container>
+</ion-content>
+</ion-app>
