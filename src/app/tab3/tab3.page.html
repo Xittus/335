@@ -1,9 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-    <h1>tab3 test</h1>
+    <ion-title>Volleyrecords</ion-title>
+    <h1>Review</h1>
   </ion-toolbar>
 </ion-header>
 
@@ -13,6 +11,26 @@
       <ion-title size="large">Tab 3</ion-title>
     </ion-toolbar>
   </ion-header>
+  <iframe src="{{url}}" title="Volleyball Volleyrecords"></iframe>
+  <ion-button (click)="deleteVid()">Löschen</ion-button>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-list>
+    <ion-item>
+      <ion-input
+        label="Spiel Notizen"
+        labelPlacement="stacked"
+        [clearInput]="true"
+        placeholder="Enter your Notes here"
+        [(ngModel)]="notes"
+      >
+      </ion-input>
+      <ion-button (click)="saveNotes()">Sichern</ion-button>
+    </ion-item>
+  </ion-list>
+  {{videoName}}
+  <p>
+    Wenn das Video {{videoName}} nicht angezeigt werden kann kannst du es hier
+    unter:
+    <a href="{{url}}">{{url}}</a> öffnen
+  </p>
 </ion-content>

@@ -1,22 +1,21 @@
 <ion-app>
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-Video aufnehemen    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header [translucent]="true">
     <ion-toolbar>
-      <ion-title size="large">Video aufnehemen</ion-title>
+      <ion-title>Volleyrecords</ion-title>
+      <h1>Video Aufnehmen</h1>
     </ion-toolbar>
   </ion-header>
- <app-recordvid></app-recordvid>
- <h1>tab1S</h1>
 
- <ion-button (click)="captureVideo()">start vid</ion-button>
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Video aufnehemen</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <img src="assets\istockphoto-1305166860-612x612.jpg" alt="Volleyball" />
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+    <app-recordvid></app-recordvid>
+
+    <ion-button (click)="captureVideo()">Start recording</ion-button>
+  </ion-content>
 </ion-app>

@@ -1,8 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Bibliothek
-    </ion-title>
+    <ion-title>Volleyrecords</ion-title>
+    <h1>Bibliothek</h1>
   </ion-toolbar>
 </ion-header>
 
@@ -12,6 +11,13 @@
       <ion-title size="large">Tab 2</ion-title>
     </ion-toolbar>
   </ion-header>
-<h1>tab2</h1>
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+
+  <ion-list>
+    <ion-item
+      [href]="'tabs/tab3/' + video.name"
+      *ngFor="let video of listOfVids"
+    >
+      {{video.name}}
+    </ion-item>
+  </ion-list>
 </ion-content>
